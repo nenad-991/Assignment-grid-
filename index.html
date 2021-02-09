@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadatak-grid</title>
+    <style>
+       
+        
+        #grid2 {
+            
+            margin: 0 auto;
+            gap: 65px;
+            max-width: 100vw;
+            width: 90%;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: repeat(5, 220px);
+            grid-template-rows: 1fr 1fr;
+           
+        }
+     
+        
+        .tile {
+            background-color: cornflowerblue;
+            background-image: url("placeholder-image.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            
+            height: 120px;
+        }
+        .box {
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+        #text {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 8px;
+        }
+
+        #grid1 {
+            font-family: sans-serif;
+            color: rgb(68, 66, 66);
+            max-width: 100vw;
+            width: 90%;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 960px;
+            grid-template-rows: 100px;
+            margin: 0 auto;
+            text-align: start;
+        }
+
+        #grid3 {
+            max-width: 100vw;
+            width: 90%;
+            display: grid;
+            grid-template-columns: auto;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 1024px) {
+        #grid2 {
+        grid-template-columns: repeat(5, 1fr);
+        
+        }
+        }
+        
+        @media screen and (max-width: 768px) {
+        #grid2{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        }
+        #grid3 {
+            grid-template-columns: 1fr;
+        }
+        }
+        
+        @media screen and (max-width: 414px) {
+        #grid2{
+        grid-template-columns: 240px;
+        grid-template-rows: repeat(10, 1fr);
+        
+        }
+        #grid1, #grid3{
+            grid-template-columns: 200px;    
+             }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="grid1">
+        <h1>Gallery Heading</h1>
+    </div>
+
+   
+    <div id="grid2">
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    <div class="box">
+        <div class="tile"></div>
+        <div id="text">Image Title</div>
+    </div>
+    
+    
+    
+    </div>
+    <div id="grid3">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ne
+            sciunt labore repellendus sed excepturi, nostrum vitae fuga? Omnis sed, un
+            de, maiores pariatur ipsum facilis reprehenderit necessitatibus ipsam autem 
+            aliquid illo magni iste. Consequatur, itaque ea? Sequi reiciendis quod dolorem d
+            oloremque, nemo, eaque explicabo porro cum pariatur illum aperiam saepe quis aute
+            m facere unde nam. Vitae dolor, et vero autem nobis expedita!</p>
+    </div>
+    
+</body>
+</html>
